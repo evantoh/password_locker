@@ -1,21 +1,28 @@
 class Credentials:
-    cred_list = [] # Empty credentials to store objects list
+    """
+    class that creates a new credential(cred)
+    """
+    cred_list=[]
 
-    def __init__(self,account_name,user_name,password,user):
-            """
-            Class that generates new instances of credentials.
-            """
-
-            self.account_name = account_name
-            self.user_name = user_name
-            self.password = password
-            self.user = user
-        
-            # Init method up here
-    def save_credentials(self):
-
+    def __init__(self, account,username,password,user):
         '''
-        save_credentials method saves credential objects into cred_list
+        define the properties of the class
+        '''
+        self.account=account
+        self.username=username
+        self.password=password
+        self.user=user
+
+    def create_credential(self):
+        '''
+        method to create a credential
         '''
 
-        Credentials.cred_list.append(self)
+
+    def save_credential(self):
+        '''
+        method to save the credentials inputted
+        '''
+        # new_cred=Credential(account,username,password,user)
+        Credential.cred_list.append(self)
+        # return self.cred_list
