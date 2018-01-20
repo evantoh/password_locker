@@ -17,6 +17,12 @@ class TestContact(unittest.TestCase):
         '''
         self.new_cred = Credentials("facebook","evans","evans123","evantoh") # create credential object
 
+        # setup and class creation up here
+    def tearDown(self):
+            '''
+            tearDown method that does clean up after each test case has run.
+            '''
+            Credentials.cred_list = []
     def test_init(self):
         '''
         test_init test case to test if the object is initialized properly
