@@ -23,6 +23,6 @@ class Credentials:
         '''
         method to save the credentials inputted
         '''
-        # new_cred=Credential(account,username,password,user)
+        
         Credential.cred_list.append(self)
         # return self.cred_list
