@@ -10,16 +10,13 @@ class TestUser(unittest.TestCase):
         '''
         setup method to run before each test case
         '''
-        self.the_user=User('david','password')
-        self.the_user1=User('njoroge','drowssap')
-
-        # self.new_cred=('facebook','david@gmail.com','123qwerty',to_login)
-
+        self.the_user=User('evans','password')
+        self.the_user1=User('mwenda','123')
 
 
     def tearDown(self):
         User.users_list=[]
-        Credential.cred_list=[]
+        credentials.cred_list=[]
 
     def test_init(self):
         '''
@@ -85,10 +82,6 @@ class TestUser(unittest.TestCase):
             print(cred.user)
 
         self.assertEqual(Credential.cred_list[0].user,to_login)
-
-
-
-
 
 
 if __name__=='__main__':

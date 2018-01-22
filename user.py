@@ -14,8 +14,7 @@ class User:
         '''
         self.name=name
         self.password=password
-        # self.credentials=dataCred
-
+      
     def register(self):
         '''
         method that saves a new instance ie to register

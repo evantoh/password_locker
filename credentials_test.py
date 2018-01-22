@@ -31,7 +31,7 @@ class TestUser(unittest.TestCase):
         '''
         self.new_cred.save_credential()
         self.assertEqual(len(Credential.cred_list),1)
-        # self.assertEqual(Credential.cred_list.account,1)
+       
 
 
 
